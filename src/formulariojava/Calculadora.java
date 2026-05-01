@@ -10,14 +10,14 @@ import javax.swing.JOptionPane;
  *
  * @author 1091809
  */
-public class Form1 extends javax.swing.JFrame {
+public class Calculadora extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Form1.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Calculadora.class.getName());
 
     /**
      * Creates new form Form1
      */
-    public Form1() {
+    public Calculadora() {
         initComponents();
     }
 
@@ -46,7 +46,8 @@ public class Form1 extends javax.swing.JFrame {
 
         jLabel4.setText("jLabel4");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("CalculadoraUltraMegaZord");
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 153));
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -163,6 +164,7 @@ public class Form1 extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void TxfNumero2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxfNumero2ActionPerformed
@@ -245,7 +247,7 @@ public class Form1 extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new Form1().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new Calculadora().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
