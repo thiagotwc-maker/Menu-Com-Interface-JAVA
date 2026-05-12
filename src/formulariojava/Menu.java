@@ -29,14 +29,19 @@ public class Menu extends javax.swing.JFrame {
     private void initComponents() {
 
         jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
 
         jMenuItem1.setText("jMenuItem1");
+
+        jMenuItem5.setText("jMenuItem5");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menu");
@@ -52,6 +57,16 @@ public class Menu extends javax.swing.JFrame {
         jMenuItem2.setText("Formas Geomatricas");
         jMenuItem2.addActionListener(this::jMenuItem2ActionPerformed);
         jMenu1.add(jMenuItem2);
+
+        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/icons8-planets-30.png"))); // NOI18N
+        jMenuItem4.setText("Peso Planetas");
+        jMenuItem4.addActionListener(this::jMenuItem4ActionPerformed);
+        jMenu1.add(jMenuItem4);
+
+        jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/icons8-config-30.png"))); // NOI18N
+        jMenuItem6.setText("Configuração Spotfy");
+        jMenuItem6.addActionListener(this::jMenuItem6ActionPerformed);
+        jMenu1.add(jMenuItem6);
 
         jMenuBar1.add(jMenu1);
 
@@ -88,6 +103,16 @@ public class Menu extends javax.swing.JFrame {
        octavius.setVisible(true);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        PesoPlanetas pl = new PesoPlanetas();
+        pl.setVisible(true);
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        ConfigJogo cf = new ConfigJogo();
+        cf.setVisible(true);
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -121,5 +146,8 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
     // End of variables declaration//GEN-END:variables
 }

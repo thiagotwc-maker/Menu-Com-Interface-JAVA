@@ -159,6 +159,7 @@ public class PesoPlanetas extends javax.swing.JFrame {
                   break;              
           }
              resultado = quilo / 10 * gravidade;
+             JOptionPane.showMessageDialog(null, "O Peso É:" +resultado);
              
        }catch(Exception e){
            JOptionPane.showMessageDialog(null, "Não Pode Conter Letras Ou Simbolos.");          
